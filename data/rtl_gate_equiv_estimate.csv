@@ -1,0 +1,4 @@
+Component,Assumption,2GE (approx)
+Seq==NextExpected comparator,64×XNOR + 63×AND (tree),319.0
+Incremental D-Inv gating,AND with aead_ok + gated free,2.0
+Incremental / comparator,2 / 319,0.006269592476489028

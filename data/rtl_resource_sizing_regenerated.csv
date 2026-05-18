@@ -1,0 +1,4 @@
+Item,Per-frame bytes,Frames,Total bytes,Total KiB,Total bits,"18Kb BRAM blocks (18,432b)","36Kb BRAM blocks (36,864b)"
+Mode A TX retry buffer (N_win),288,64,18432,18.0,147456,8,4
+Mode B RX epoch buffer (M),276,32,8832,8.625,70656,4,2
+Incremental storage for tags (Mode A vs. no-tag),12,64,768,0.75,6144,1,1
