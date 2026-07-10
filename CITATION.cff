@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use ShieldLink or its supplementary artifacts, please cite the IJRC article."
+title: "ShieldLink: Retry-Aware Authenticated Encryption for Secure and Reliable Chiplet Interconnects"
+type: software
+version: "IJRC-accepted-2026"
+date-released: 2026-07-16
+license: CC-BY-4.0
+repository-code: "https://github.com/pinkysworld/ShieldLink"
+url: "https://github.com/pinkysworld/ShieldLink"
+authors:
+  - family-names: Nguyen
+    given-names: Michél
+    affiliation: "University of the People"
+preferred-citation:
+  type: article
+  title: "ShieldLink: Retry-Aware Authenticated Encryption for Secure and Reliable Chiplet Interconnects"
+  authors:
+    - family-names: Nguyen
+      given-names: Michél
+      affiliation: "University of the People"
+  journal: "International Journal of Research in Computing"
+  volume: "5"
+  issue: "2"
+  year: 2026
