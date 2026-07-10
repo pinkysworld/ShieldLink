@@ -1,6 +1,11 @@
 # ShieldLink IJRC Supplementary Materials
 
-This bundle accompanies the IJRC manuscript **ShieldLink: Retry-Aware Authenticated Encryption for Secure and Reliable Chiplet Interconnects**.
+This repository accompanies the IJRC article **ShieldLink: Retry-Aware Authenticated Encryption for Secure and Reliable Chiplet Interconnects**.
+
+**Author:** Michél Nguyen  
+**Journal:** International Journal of Research in Computing (IJRC)  
+**Volume/Issue:** Volume 5, Issue 2, 2026  
+**Repository status:** publication artifact bundle with code, results, RTL skeletons, and figures
 
 ## Contents
 
@@ -10,6 +15,8 @@ This bundle accompanies the IJRC manuscript **ShieldLink: Retry-Aware Authentica
 - `data/` contains the regenerated five-seed simulation CSVs, representative Table 3 values, targeted beta-sweep crossover table, and RTL sizing data.
 - `figures/` contains the regenerated figures used by the revised manuscript and appendix.
 - `rtl/` contains the SystemVerilog RTL skeleton for the ShieldLink control plane and baseline blocks.
+- `CITATION.cff` provides citation metadata for GitHub and reference managers.
+- `RELEASE_NOTES.md` summarizes the publication snapshot and suggested release tag.
 
 ## Reproduction notes
 
@@ -24,3 +31,9 @@ python code/resource_estimator.py
 ## Scope
 
 The RTL files are synthesizable skeleton/control-plane artifacts intended for independent evaluation and extension. They are not post-place-and-route timing or power results.
+
+The bounded formal exploration is intended as a safety sanity check for the ACK-gating invariant, not as a complete proof of liveness or a full formal verification of all implementation schedules.
+
+## Citation
+
+Please cite the IJRC article if you use ShieldLink or its supplementary artifacts. Citation metadata is provided in `CITATION.cff`.
