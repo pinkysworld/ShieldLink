@@ -1,0 +1,4 @@
+Item,Quantity,Bits,KiB,"18Kb BRAM blocks (18,432b)","36Kb BRAM blocks (36,864b)",Notes
+Mode B-SR RX epoch buffer,32 frames x 276 bytes,70656,8.625,4,2,Same data buffer as flush-all Mode B; good frames are retained across repair rounds.
+Selective-retry bitmaps,3 x 32 bits,96,0.01171875,0,0,"received_bitmap, crc_fail_bitmap, and emitted nak_bitmap."
+Approximate control state,"sequence state, index, pulses, bitmaps",237,0.0289306640625,0,0,Structural FF estimate only; excludes memory macro implementation and cipher core.
