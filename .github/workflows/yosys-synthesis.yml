@@ -1,0 +1,26 @@
+name: Yosys synthesis
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'rtl/**'
+      - 'synth/**'
+      - '.github/workflows/yosys-synthesis.yml'
+
+jobs:
+  synth:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Yosys
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y yosys
+      - name: Run synthesis summaries
+        run: bash synth/run_yosys_synthesis.sh
+      - name: Upload synthesis output
+        uses: actions/upload-artifact@v4
+        with:
+          name: yosys-synthesis-output
+          path: synth/out/
